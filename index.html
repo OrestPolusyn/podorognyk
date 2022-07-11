@@ -1,461 +1,551 @@
 <!DOCTYPE html>
 <html lang="uk" class="page">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#111111">
-    <title>Подорожник</title>
-    <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" type="font/woff" crossorigin>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Подорожник</title>
+  <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" type="font/woff" crossorigin />
 
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script defer src="js/main.js"></script>
-  </head>
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
 
 <body class="page__body" id="home">
   <div class="site-container">
     <header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <div class="logo">
-        <img class="logo__image" src="./img/logo.svg" width="240" height="50" alt="Логотип Подорожник" loading="lazy">
-      </div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <img class="logo__image" src="./img/logo.svg" width="240" height="50" alt="Логотип Подорожник"
+              loading="lazy" />
+          </div>
 
-      <nav class="nav" title="">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">
-              Головна
-            </a>
-          </li>
+          <nav class="nav" title="">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link"> Головна </a>
+              </li>
 
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              Про нас
-            </a>
-          </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link"> Про нас </a>
+              </li>
 
-          <li class="nav__item ">
-            <a href="#donate" class="nav__link">
-              Задонатити
-            </a>
-          </li>
+              <li class="nav__item">
+                <a href="#donate" class="nav__link"> Задонатити </a>
+              </li>
 
-          <li class="nav__item nav__item--donate">
-            <a href="#donate" class="nav__link nav__link link-colored">
-              Задонатити
-            </a>
-          </li>
-
-          <li class="nav__item ">
-            <ul class="social" title="Соціальні мережі">
-              <li class="social__item">
-                <a class="social__link social__link--insta" href="#" target="_blank" aria-label="Наша сторінка в Instagram">
-                  <svg class="social__icon">
-                    <use xlink:href="img/sprite.svg#insta"></use>
-                  </svg>
+              <li class="nav__item nav__item--donate">
+                <a href="#donate" class="nav__link nav__link link-colored">
+                  Задонатити
                 </a>
               </li>
 
-              <li class="social__item">
-                <a class="social__link social__link--fb" href="#" target="_blank" aria-label="Наша сторінка на Фейсбуці">
-                  <svg class="social__icon">
-                    <use xlink:href="img/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
+              <li class="nav__item">
+                <ul class="social" title="Соціальні мережі">
+                  <li class="social__item">
+                    <a class="social__link social__link--insta" href="#" target="_blank"
+                      aria-label="Наша сторінка в Instagram">
+                      <svg class="social__icon">
+                        <use xlink:href="img/sprite.svg#insta"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link social__link--fb" href="#" target="_blank"
+                      aria-label="Наша сторінка на Фейсбуці">
+                      <svg class="social__icon">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main class="main">
+      <section class="hero" style="background-image: url('./img/hero.webp')">
+        <div class="hero__inner">
+          <div class="container">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Збережемо життя і здоров'я наших воїнів
+              </h1>
 
-      <section class="hero" style="background-image: url('./img/hero.webp');">
-  <div class="hero__inner">
-    <div class="container">
-      <div class="hero__content">
-        <h1 class="hero__title">
-          Тактична медицина рятує тисячі життів на фронті. Забезпечимо наших медиків — Врятуємо життя пораненим
-        </h1>
+              <p class="hero__text content">
+                Тактична медицина вкрай необхідна на війні, саме тому ми маємо
+                переконатись, що кожен воїн на фронті має необхідне обладнання
+                для самодопомоги та допомоги побратимам.
+              </p>
 
-        <p class="hero__text content">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.
-        </p>
+              <a class="link-colored" href="#donate"> Задонатити </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a class="link-colored" href="#donate">
-          Задонатити
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 
       <div class="container">
-        <section class="about" id="about">
-  <div class="about__inner">
+        <section class="about">
+          <div class="about__inner">
+            <ul class="about__pictures">
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/lifepack.avif" type="image/avif" />
+                  <source srcset="./img/lifepack.webp" type="image/webp" />
+                  <img class="about__image" src="./img/lifepack.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
 
-    <ul class="about__pictures">
-      <li class="about__picture">
-        <picture>
-          <source srcset="./img/lifepack.avif" type="image/avif">
-          <source srcset="./img/lifepack.webp" type="image/webp">
-          <img class="about__image" src="./img/lifepack.jpg" width="240" height="180" alt="Аптечка медична" loading="lazy">
-        </picture>
-      </li>
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/bags.avif" type="image/avif" />
+                  <source srcset="./img/bags.webp" type="image/webp" />
+                  <img class="about__image" src="./img/bags.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
 
-      <li class="about__picture">
-        <picture>
-          <source srcset="./img/bags.avif" type="image/avif">
-          <source srcset="./img/bags.webp" type="image/webp">
-          <img class="about__image" src="./img/bags.jpg" width="240" height="180" alt="Аптечка медична" loading="lazy">
-        </picture>
-      </li>
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/openpack.avif" type="image/avif" />
+                  <source srcset="./img/openpack.webp" type="image/webp" />
+                  <img class="about__image" src="./img/openpack.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
 
-      <li class="about__picture">
-        <picture>
-          <source srcset="./img/openpack.avif" type="image/avif">
-          <source srcset="./img/openpack.webp" type="image/webp">
-          <img class="about__image" src="./img/openpack.jpg" width="240" height="180" alt="Аптечка медична" loading="lazy">
-        </picture>
-      </li>
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/team.avif" type="image/avif" />
+                  <source srcset="./img/team.webp" type="image/webp" />
+                  <img class="about__image" src="./img/team.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
+            </ul>
 
-      <li class="about__picture">
-        <picture>
-          <source srcset="./img/team.avif" type="image/avif">
-          <source srcset="./img/team.webp" type="image/webp">
-          <img class="about__image" src="./img/team.jpg" width="240" height="180" alt="Аптечка медична" loading="lazy">
-        </picture>
-      </li>
-    </ul>
+            <div class="about__content">
+              <h2 class="about__title title">На чому фокусуємось?</h2>
 
-    <div class="about__content">
-      <h2 class="about__title title">
-        Про нас
-      </h2>
+              <div class="about__text content">
+                <p>
+                  Разом з нашими партнерами ми займаємось постачанням невідкладних та важливих засобів тактичної
+                  медицини та тактичного спорядження. Ми самі укомплектовуємо аптечки високоякісними та сертифікованими
+                  компонентами необхідним для тактичної медицини.
+                </p>
+                <p>
+                  Ми також самі купуємо всі матеріали та фурнітуру і разом з нашими партнерами і волонтерами відшиваємо
+                  якісні та ергономічні медичні підсумки й тактичне спорядження.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <div class="about__text content">
-        <p>Що таке «Подорожник»? В дитинстві ми грались, бігали та отримували невеличкі поранення та прикладали до рани подорожник, якщо він ріс десь поруч. Це була наша «екстрена допомога» і ми вірили що ці листочки мають цілющі властивості. Зараз Україна у стані війни і ми — невелика група людей, почали допомагати своїм рідним та близьким, які вимушені були стати на захист нашої країни. Так створився благодійній фонд «Подорожник» і тепер ми віримо, що несемо цілющі властивості та рятуємо життя наших воїнів.
-        </p>
-        <p>
-          Наша мета — безпосередньо забезпечити військових та парамедиків які працюють в найгарячіших точках фронту. Саме вони надають екстрену допомогу та тримають поранених солдат живими до їх евакуації до професійних лікарів. 1 парамедик на фронті — це сотні врятованих життів.
-          Як ми допомагаємо? (тут треба твоя допомога, бо мені не дуже подобається) Разом з нашими партнерами ми комплектуємо аптечки всім необхідним для тактичної медицини. Ми закуповуємо виключно сертифіковані товари, які не нашкодять військовим. Також ми самі купуємо всі комплектуючі для пошиття якісних аптечок та підсумків. А потім відвозимо це бригадним лікарям, які видають аптечки та проводять тренінги.</p>
-      </div>
-    </div>
-  </div>
-</section>
+   
 
         <section class="donate" id="donate">
-  <h2 class="donate__title title-sec">Задонатити </h2>
-  <ul class="donate__list">
-    <li class="donate__item">
-      <details class="donate__faq" open>
-        <summary>Реквізити БО " БФ «Подорожник»
-        </summary>
-        <div class="donate__content content">
-          <p class="black">Найменування отримувача БО «БФ „ПОДОРОЖНИК“ <br>
-            Код отримувача 44816276 <br>Найменування банку АТ КБ „ПРИВАТБАНК“<br>Призначення платежу „Благодійна допомога“<br></p>
+          <h2 class="donate__title title-sec">Наші реквізити</h2>
           <ul class="donate__list">
-            <li class="donate__list-item"><span class="black">Гривня </span>
-              <div class="donate__copy"><span>UA123052990000026000025032681</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
+            <li class="donate__item">
+              <details class="donate__faq" open>
+                <summary>Реквізити БО " БФ «Подорожник»</summary>
+                <div class="donate__content content">
+                  <p class="black">
+                    Найменування отримувача БО «БФ „ПОДОРОЖНИК“ <br />
+                    Код отримувача 44816276 <br />Найменування банку
+                    АТ КБ „ПРИВАТБАНК“<br />Призначення платежу „Благодійна
+                    допомога“<br />
+                  </p>
+                  <ul class="donate__list">
+                    <li class="donate__list-item">
+                      <span class="black">Гривня </span>
+                      <div class="donate__copy">
+                        <span>UA123052990000026000025032681</span><button class="donate__copy-btn" type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">Долар (USD) </span>
+                      <div class="donate__copy">
+                        <span>UA183052990000026005025023770</span><button class="donate__copy-btn" type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">Євро (EUR) </span>
+                      <div class="donate__copy">
+                        <span>UA303052990000026007005026160</span><button class="donate__copy-btn" type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </details>
             </li>
-            <li class="donate__list-item"><span class="black">Долар (USD) </span>
-              <div class="donate__copy"><span>UA183052990000026005025023770</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-            </li>
-            <li class="donate__list-item"><span class="black">Євро (EUR) </span>
-              <div class="donate__copy"><span>UA303052990000026007005026160</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-            </li>
-          </ul>
-        </div>
-      </details>
-    </li>
 
-    <li class="donate__item">
-      <details class="donate__faq">
-        <summary>SWIFT перекази з-закордону </summary>
-        <div class="donate__content donate__content--double content">
-          <ul class="donate__list">
-            <li class="donate__list-item"><span class="black">SWIFT in US dollars <span class="gold">(USD)</span><br>Company Name CO «CF „PLANTAIN“
-              </span><span class="black">IBAN Code </span>
-              <div class="donate__copy"><span>UA183052990000026005025023770</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-              <p class="donate__swift">Name of the bank: JSC CB «PRIVATBANK»,
-                1D HRUSHEVSKOHO STR.,
-                KYIV,
-                01001,
-                UKRAINE Bank SWIFT Code: PBANUA2X Correspondent bank: JP Morgan Chase Bank,
-                New York,
-                USA SWIFT Code of the correspondent bank CHASUS33 Beneficiary bank’s account with Correspondent bank: 0011000080 </p>
+            <li class="donate__item">
+              <details class="donate__faq">
+                <summary>SWIFT перекази з-закордону</summary>
+                <div class="donate__content donate__content--double content">
+                  <ul class="donate__list">
+                    <li class="donate__list-item">
+                      <span class="black">SWIFT in US dollars <span class="gold">(USD)</span><br />Company Name
+                        CO «CF „PLANTAIN“ </span><span class="black">IBAN Code </span>
+                      <div class="donate__copy">
+                        <span>UA183052990000026005025023770</span><button class="donate__copy-btn" type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="donate__swift">
+                        Name of the bank: JSC CB «PRIVATBANK», 1D HRUSHEVSKOHO
+                        STR., KYIV, 01001, UKRAINE Bank SWIFT Code: PBANUA2X
+                        Correspondent bank: JP Morgan Chase Bank, New York,
+                        USA SWIFT Code of the correspondent bank CHASUS33
+                        Beneficiary bank’s account with Correspondent bank:
+                        0011000080
+                      </p>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">SWIFT in PLN <span class="gold">(PLN)</span><br />Company Name
+                        CO «CF „PLANTAIN“ </span><span class="black">IBAN Code </span>
+                      <div class="donate__copy">
+                        <span>UA863052990000026003015017646</span><button class="donate__copy-btn" type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="donate__swift">
+                        Name of the bank: JSC CB «PRIVATBANK», 1D HRUSHEVSKOHO
+                        STR., KYIV, 01001, UKRAINE Bank SWIFT Code PBANUA2X
+                        Correspondent bank Bank Pekao/Grupa Pekao S.A.,
+                        Warsaw, Poland SWIFT Code of the correspondent bank
+                        PKOPPLPW Beneficiary bank’s account with Correspondent
+                        bank: PL13124000013140533111120301
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="donate__list">
+                    <li class="donate__list-item">
+                      <span class="black">SWIFT in euros <span class="gold">(EUR)</span><br />Company Name
+                        CO «CF „PLANTAIN“ </span><span class="black">IBAN Code </span>
+                      <div class="donate__copy">
+                        <span>UA303052990000026007005026160</span><button class="donate__copy-btn" type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="donate__swift">
+                        Name of the bank: JSC CB «PRIVATBANK», 1D HRUSHEVSKOHO
+                        STR., KYIV, 01001, UKRAINE Bank SWIFT Code PBANUA2X
+                        Correspondent bank: Commerzbank AG, Frankfurt am Main,
+                        Germany SWIFT Code of the correspondent bank COBADEFF
+                        Beneficiary bank’s account with Correspondent bank:
+                        400886700401
+                      </p>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">SWIFT in CZK <span class="gold">(CZK)</span><br />Company Name
+                        CO «CF „PLANTAIN“ </span><span class="black">IBAN Code </span>
+                      <div class="donate__copy">
+                        <span>UA793052990000026008045027656</span><button class="donate__copy-btn" type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="donate__swift">
+                        Name of the bank: JSC CB «PRIVATBANK», 1D HRUSHEVSKOHO
+                        STR., KYIV, 01001, UKRAINE Bank SWIFT Code PBANUA2X
+                        Correspondent bank BANK OF NEW YORK MELLON, NEW YORK,
+                        USA SWIFT Code of the correspondent bank IRVTUS3N
+                        Beneficiary bank’s account with Correspondent bank:
+                        8033046600
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
             </li>
-            <li class="donate__list-item"><span class="black">SWIFT in PLN <span class="gold">(PLN)</span><br>Company Name CO «CF „PLANTAIN“
-              </span><span class="black">IBAN Code </span>
-              <div class="donate__copy"><span>UA863052990000026003015017646</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-              <p class="donate__swift">Name of the bank: JSC CB «PRIVATBANK»,
-                1D HRUSHEVSKOHO STR.,
-                KYIV,
-                01001,
-                UKRAINE Bank SWIFT Code PBANUA2X Correspondent bank Bank Pekao/Grupa Pekao S.A.,
-                Warsaw,
-                Poland SWIFT Code of the correspondent bank PKOPPLPW Beneficiary bank’s account with Correspondent bank: PL13124000013140533111120301 </p>
-            </li>
-          </ul>
-          <ul class="donate__list">
-            <li class="donate__list-item"><span class="black">SWIFT in euros <span class="gold">(EUR)</span><br>Company Name CO «CF „PLANTAIN“
-              </span><span class="black">IBAN Code </span>
-              <div class="donate__copy"><span>UA303052990000026007005026160</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-              <p class="donate__swift">Name of the bank: JSC CB «PRIVATBANK»,
-                1D HRUSHEVSKOHO STR.,
-                KYIV,
-                01001,
-                UKRAINE Bank SWIFT Code PBANUA2X Correspondent bank: Commerzbank AG,
-                Frankfurt am Main,
-                Germany SWIFT Code of the correspondent bank COBADEFF Beneficiary bank’s account with Correspondent bank: 400886700401 </p>
-            </li>
-            <li class="donate__list-item"><span class="black">SWIFT in CZK <span class="gold">(CZK)</span><br>Company Name CO «CF „PLANTAIN“
-              </span><span class="black">IBAN Code </span>
-              <div class="donate__copy"><span>UA793052990000026008045027656</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-              <p class="donate__swift">Name of the bank: JSC CB «PRIVATBANK»,
-                1D HRUSHEVSKOHO STR.,
-                KYIV,
-                01001,
-                UKRAINE Bank SWIFT Code PBANUA2X Correspondent bank BANK OF NEW YORK MELLON,
-                NEW YORK,
-                USA SWIFT Code of the correspondent bank IRVTUS3N Beneficiary bank’s account with Correspondent bank: 8033046600 </p>
-            </li>
-          </ul>
-        </div>
-      </details>
-    </li>
 
-    <li class="donate__item">
-      <details class="donate__faq">
-        <summary>Криптовалюта </summary>
-        <div class="donate__content donate__content--double  content">
-          <ul class="donate__list">
-            <li class="donate__list-item"><span class="black">BTC </span>
-              <div class="donate__copy"><span>bc1q49n4cnxuajp8vaejtzmawjpxu3nq85l0cwshj4</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
+            <li class="donate__item">
+              <details class="donate__faq">
+                <summary>Криптовалюта</summary>
+                <div class="donate__content donate__content--double content">
+                  <ul class="donate__list">
+                    <li class="donate__list-item">
+                      <span class="black">BTC </span>
+                      <div class="donate__copy">
+                        <span>bc1q49n4cnxuajp8vaejtzmawjpxu3nq85l0cwshj4</span><button class="donate__copy-btn"
+                          type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">USDT (ERC-20) </span>
+                      <div class="donate__copy">
+                        <span>bc1q49n4cnxuajp8vaejtzmawjpxu3nq85l0cwshj4</span><button class="donate__copy-btn"
+                          type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">USDT (BEP-20) </span>
+                      <div class="donate__copy">
+                        <span>bc1q49n4cnxuajp8vaejtzmawjpxu3nq85l0cwshj4</span><button class="donate__copy-btn"
+                          type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="donate__list">
+                    <li class="donate__list-item">
+                      <span class="black">ETH </span>
+                      <div class="donate__copy">
+                        <span>0×953EcB8d30BB1Ae24E7a59955BCA45F37F6E0459</span><button class="donate__copy-btn"
+                          type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">USDT (TRC-20) </span>
+                      <div class="donate__copy">
+                        <span>0×953EcB8d30BB1Ae24E7a59955BCA45F37F6E0459</span><button class="donate__copy-btn"
+                          type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="donate__list-item">
+                      <span class="black">DOGE </span>
+                      <div class="donate__copy">
+                        <span>0×953EcB8d30BB1Ae24E7a59955BCA45F37F6E0459</span><button class="donate__copy-btn"
+                          type="button">
+                          <svg class="donate__copy-icon">
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </details>
             </li>
-            <li class="donate__list-item"><span class="black">USDT (ERC-20) </span>
-              <div class="donate__copy"><span>bc1q49n4cnxuajp8vaejtzmawjpxu3nq85l0cwshj4</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-            </li>
-            <li class="donate__list-item"><span class="black">USDT (BEP-20) </span>
-              <div class="donate__copy"><span>bc1q49n4cnxuajp8vaejtzmawjpxu3nq85l0cwshj4</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-            </li>
-          </ul>
-          <ul class="donate__list">
-            <li class="donate__list-item"><span class="black">ETH </span>
-              <div class="donate__copy"><span>0×953EcB8d30BB1Ae24E7a59955BCA45F37F6E0459</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-            </li>
-            <li class="donate__list-item"><span class="black">USDT (TRC-20) </span>
-              <div class="donate__copy"><span>0×953EcB8d30BB1Ae24E7a59955BCA45F37F6E0459</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-            </li>
-            <li class="donate__list-item"><span class="black">DOGE </span>
-              <div class="donate__copy"><span>0×953EcB8d30BB1Ae24E7a59955BCA45F37F6E0459</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                    <use xlink:href="img/sprite.svg#copy"></use>
-                  </svg></button></div>
-            </li>
-          </ul>
-        </div>
-      </details>
-    </li>
 
-    <li class="donate__item">
-      <details class="donate__faq">
-        <summary>Приватбанк </summary>
-        <div class="donate__content content">
-          <div class="donate__list-item"><span class="black">Картка (тільки для користувачів Приватбанку) </span>
-            <div class="donate__copy"><span>5169 3351 0065 3324</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                  <use xlink:href="img/sprite.svg#copy"></use>
-                </svg></button></div>
+            <li class="donate__item">
+              <details class="donate__faq">
+                <summary>Приватбанк</summary>
+                <div class="donate__content content">
+                  <div class="donate__list-item">
+                    <span class="black">Картка (тільки для користувачів Приватбанку)
+                    </span>
+                    <div class="donate__copy">
+                      <span>5169 3351 0065 3324</span><button class="donate__copy-btn" type="button">
+                        <svg class="donate__copy-icon">
+                          <use xlink:href="img/sprite.svg#copy"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <li class="donate__item">
+              <details class="donate__faq">
+                <summary>PayPal</summary>
+                <div class="donate__content content">
+                  <div class="donate__list-item">
+                    <div class="donate__copy">
+                      <span>podorozhnyk2022@gmail.com</span><button class="donate__copy-btn" type="button">
+                        <svg class="donate__copy-icon">
+                          <use xlink:href="img/sprite.svg#copy"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <li class="donate__item">
+              <details class="donate__faq">
+                <summary>Liqpay</summary>
+                <div class="donate__content content">
+                  <p class="black">
+                    Найменування отримувача БО «БФ „„ПОДОРОЖНИК“ Код
+                    отримувача 44816276 Найменування банку АТ КБ „ПРИВАТБАНК“
+                    Призначення платежу „Благодійна допомога“
+                  </p>
+                  <p>
+                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                    of «de Finibus Bonorum et Malorum"(The Extremes of Good
+                    and Evil) by Cicero, written in 45 BC. This book
+                    is a treatise on the theory of ethics, very popular during
+                    the Renaissance. The first line of Lorem Ipsum, «Lorem
+                    ipsum dolor sit amet.», comes from a line in section
+                    1.10.32.
+                  </p>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about" id="about">
+          <div class="about__inner">
+            <ul class="about__pictures">
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/lifepack.avif" type="image/avif" />
+                  <source srcset="./img/lifepack.webp" type="image/webp" />
+                  <img class="about__image" src="./img/lifepack.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
+
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/bags.avif" type="image/avif" />
+                  <source srcset="./img/bags.webp" type="image/webp" />
+                  <img class="about__image" src="./img/bags.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
+
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/openpack.avif" type="image/avif" />
+                  <source srcset="./img/openpack.webp" type="image/webp" />
+                  <img class="about__image" src="./img/openpack.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
+
+              <li class="about__picture">
+                <picture>
+                  <source srcset="./img/team.avif" type="image/avif" />
+                  <source srcset="./img/team.webp" type="image/webp" />
+                  <img class="about__image" src="./img/team.jpg" width="240" height="180" alt="Аптечка медична"
+                    loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+
+            <div class="about__content">
+              <h2 class="about__title title">Що таке «Подорожник»?</h2>
+
+              <div class="about__text content">
+                <p>
+                  В дитинстві ми грались, бігали та отримували невеличкі поранення і прикладали до рани подорожник, якщо
+                  він ріс десь поруч. Це була наша «екстрена допомога» і ми вірили що ці листочки мають цілющі
+                  властивості.
+                </p>
+
+                <p>
+                  Зараз Україна у стані війни і ми – невеличка група людей почали допомагати своїм рідним та близьким,
+                  які вимушені були стати на захист нашої країни. Так створився благодійний фонд «Подорожник» і тепер ми
+                  віримо, що несемо цілющі властивості та рятуємо життя наших воїнів.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </details>
-    </li>
-
-    <li class="donate__item">
-      <details class="donate__faq">
-        <summary>PayPal </summary>
-        <div class="donate__content content">
-          <div class="donate__list-item">
-            <div class="donate__copy"><span>podorozhnyk2022@gmail.com</span><button class="donate__copy-btn" type="button"><svg class="donate__copy-icon">
-                  <use xlink:href="img/sprite.svg#copy"></use>
-                </svg></button></div>
-          </div>
-        </div>
-      </details>
-    </li>
-
-    <li class="donate__item">
-      <details class="donate__faq">
-        <summary>Liqpay </summary>
-        <div class="donate__content content">
-          <p class="black">Найменування отримувача БО «БФ „„ПОДОРОЖНИК“
-            Код отримувача 44816276 Найменування банку АТ КБ „ПРИВАТБАНК“
-            Призначення платежу „Благодійна допомога“
-          </p>
-          <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of «de Finibus Bonorum et Malorum"(The Extremes of Good and Evil) by Cicero,
-            written in 45 BC. This book is a treatise on the theory of ethics,
-            very popular during the Renaissance. The first line of Lorem Ipsum,
-            «Lorem ipsum dolor sit amet.»,
-            comes from a line in section 1.10.32. </p>
-        </div>
-      </details>
-    </li>
-  </ul>
-</section>
-
-        <section class="choose">
-
-  <h2 class="choose__title title">
-    Варiанти
-  </h2>
-
-  <ul class="choose__list">
-    <li class="choose__item">
-      <div class="choose__picture">
-        <picture>
-          <source srcset="./img/big-pack.avif" type="image/avif">
-          <source srcset="./img/big-pack.webp" type="image/webp">
-          <img class="choose__image" src="./img/big-pack.jpg" width="580" height="280" alt="Велика медична аптечка" loading="lazy">
-        </picture>
-      </div>
-
-      <h3 class="choose__item-title title-sec">
-        Аптечка
-      </h3>
-
-      <div class="choose__content content">
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
-        </p>
-
-        <p>
-          Making it It is a long established fact that a reader will be distracted by the readable content of a page when lookingusing Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it
-        </p>
-      </div>
-
-      <a class="link-colored" href="#donate">
-        Задонатити
-      </a>
-    </li>
-
-    <li class="choose__item">
-      <div class="choose__picture">
-        <picture>
-          <source srcset="./img/big-pack.avif" type="image/avif">
-          <source srcset="./img/big-pack.webp" type="image/webp">
-          <img class="choose__image" src="./img/big-pack.jpg" width="580" height="280" alt="Велика медична аптечка" loading="lazy">
-        </picture>
-      </div>
-
-      <h3 class="choose__item-title title-sec">
-        Аптечка
-      </h3>
-
-      <div class="choose__content content">
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
-        </p>
-
-        <p>
-          Making it It is a long established fact that a reader will be distracted by the readable content of a page when lookingusing Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it
-        </p>
-      </div>
-
-      <a class="link-colored" href="#donate">
-        Задонатити
-      </a>
-    </li>
-  </ul>
-</section>
-
+        </section>
       </div>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-      <div class="logo">
-        <img class="logo__image" src="./img/logo.svg" width="240" height="50" alt="Логотип Подорожник" loading="lazy">
-      </div>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="logo">
+            <img class="logo__image" src="./img/logo.svg" width="240" height="50" alt="Логотип Подорожник"
+              loading="lazy" />
+          </div>
 
-      <nav class="nav" title="">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Львiв, вул. Зернова 20/2
-            </a>
-          </li>
+          <nav class="nav" title="">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link"> Львiв, вул. Зернова 20/2 </a>
+              </li>
 
-          <li class="nav__item">
-            <a href="tel:+011234567890" class="nav__link">
-              +01 1234567890
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="mailto:demo@gmail.com" class="nav__link">
-              demo@gmail.com
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <ul class="social" title="Соціальні мережі">
-              <li class="social__item">
-                <a class="social__link social__link--insta" href="#" target="_blank" aria-label="Наша сторінка в Instagram">
-                  <svg class="social__icon">
-                    <use xlink:href="img/sprite.svg#insta"></use>
-                  </svg>
+              <li class="nav__item">
+                <a href="tel:+011234567890" class="nav__link">
+                  +01 1234567890
                 </a>
               </li>
 
-              <li class="social__item">
-                <a class="social__link social__link--fb" href="#" target="_blank" aria-label="Наша сторінка на Фейсбуці">
-                  <svg class="social__icon">
-                    <use xlink:href="img/sprite.svg#facebook"></use>
-                  </svg>
+              <li class="nav__item">
+                <a href="mailto:demo@gmail.com" class="nav__link">
+                  demo@gmail.com
                 </a>
+              </li>
+
+              <li class="nav__item">
+                <ul class="social" title="Соціальні мережі">
+                  <li class="social__item">
+                    <a class="social__link social__link--insta" href="#" target="_blank"
+                      aria-label="Наша сторінка в Instagram">
+                      <svg class="social__icon">
+                        <use xlink:href="img/sprite.svg#insta"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link social__link--fb" href="#" target="_blank"
+                      aria-label="Наша сторінка на Фейсбуці">
+                      <svg class="social__icon">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-
-        </ul>
-      </nav>
-    </div>
-  </div>
-</footer>
-
+          </nav>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 
