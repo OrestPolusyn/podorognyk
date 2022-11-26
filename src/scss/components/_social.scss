@@ -1,0 +1,34 @@
+.social {
+  @include flex-all-sb;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    @include flex-all-center;
+
+    border-radius: var(--radius-main);
+    width: 37px;
+    height: 37px;
+    background-color: var(--color-gray);
+
+    &--fb {
+      .social__icon {
+        width: 9px;
+      }
+    }
+  }
+
+  &__icon {
+    width: 21px;
+    height: 21px;
+    fill: var(--color-white);
+  }
+
+  @include for-width(-mobile-ls) {
+    justify-content: center;
+  }
+}

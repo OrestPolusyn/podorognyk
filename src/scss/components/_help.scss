@@ -1,0 +1,63 @@
+.help {
+  margin-bottom: clamp(100px, 14em, 220px);
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__text h3 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  &__pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 60px;
+    gap: 40px;
+
+    @include for-width(-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    @include for-width(-mobile-md) {
+      grid-template-columns: 1fr;
+      margin: 0 auto 40px;
+      width: 80%;
+    }
+
+    @include for-width(-mobile-sl) {
+      width: 90%;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+  }
+
+  &__donate {
+    display: block;
+    margin: 0 auto;
+    max-width: 220px;
+    text-align: center;
+  }
+
+  .popup__image {
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+
+  @include for-width(-tablet) {
+    margin-bottom: 80px;
+  }
+}
